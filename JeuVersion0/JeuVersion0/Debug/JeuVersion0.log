@@ -1,0 +1,12 @@
+﻿  noisette.cpp
+c:\users\hp\documents\visual studio 2017\projects\jeuversion0\jeuversion0\noisette.cpp(8): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeuversion0\jeuversion0\noisette.cpp(18): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeuversion0\jeuversion0\noisette.cpp(19): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.10.25017\include\memory(2054): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+  c:\users\hp\documents\visual studio 2017\projects\jeuversion0\jeuversion0\noisette.cpp(13): note: voir la référence à l'instanciation de la fonction modèle 'std::unique_ptr<noisette,std::default_delete<_Ty>> std::make_unique<noisette,float&,float&>(float &,float &)' en cours de compilation
+          with
+          [
+              _Ty=noisette
+          ]
+  JeuVersion0.vcxproj -> C:\Users\hp\Documents\Visual Studio 2017\Projects\JeuVersion0\Debug\JeuVersion0.exe
+  JeuVersion0.vcxproj -> C:\Users\hp\Documents\Visual Studio 2017\Projects\JeuVersion0\Debug\JeuVersion0.pdb (Partial PDB)
