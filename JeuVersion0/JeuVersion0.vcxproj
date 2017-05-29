@@ -151,24 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Element.cpp" />
     <ClCompile Include="Jeu.cpp" />
-    <ClCompile Include="Noisette.cpp" />
-    <ClCompile Include="Nuage.cpp" />
-    <ClCompile Include="Personnage.cpp" />
-    <ClCompile Include="Plateau.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bibliotheque\Bibliotheque.vcxproj">
       <Project>{b42c1d36-e836-495d-8fb2-fe62ea545bb8}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Element.h" />
-    <ClInclude Include="Noisette.h" />
-    <ClInclude Include="nuage.h" />
-    <ClInclude Include="Personnage.h" />
-    <ClInclude Include="Plateau.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

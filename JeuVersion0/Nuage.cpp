@@ -1,4 +1,5 @@
 #include "nuage.h"
+#include "../pugixml/src/pugixml.hpp"
 
 void nuage::draw(RenderWindow& window) {
 	window.draw(*rect);
@@ -34,6 +35,18 @@ void nuage::setMange() {
 
 nuage::nuage(int x,int y)
 {
+
+	pugi::xml_document doc;
+
+	pugi::xml_parse_result result = doc.load_file("jeu.xml");
+	pugi::xml_node monjeu = doc.child("monjeu");
+	for (pugi::xml_node noouv = monjeu.first_child(); noouv; noouv = noouv.next_sibling())
+	{
+		if (!strcmp(noouv.name(), "Nuage")) {
+			vitesse = noouv.attribute("vitesse").as_int();
+			size = noouv.attribute("size").as_int();
+		}
+	}
 	posx = x;
 	posy = y;
 	vitesse = 1; //valeurs initiales, a changer plus tard
