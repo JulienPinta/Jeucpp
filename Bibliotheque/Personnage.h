@@ -22,7 +22,7 @@ private:
 	RectangleShape *Leo;
 	int vitessex;
 	int vitessey;
-	int size = 60;
+	int size;
 	int posx;
 	int posy;
 };

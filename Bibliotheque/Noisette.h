@@ -20,7 +20,7 @@ private:
 	int posx;
 	int posy;
 	int vitesse;
-	int size = 118;
+	int size;
 	unique_ptr<CircleShape> circle;
 };
 

@@ -20,7 +20,7 @@ private:
 	int posy;
 	int taille;
 	int vitesse;
-	int size = 118;
+	int size;
 	unique_ptr<RectangleShape> rect;
 };
 

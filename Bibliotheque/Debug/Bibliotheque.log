@@ -1,6 +1,18 @@
-﻿  monMain.cpp
-  Plateau.cpp
-  Génération de code en cours...
-  Ignoré... (aucune modification pertinente détectée)
+﻿  Personnage.cpp
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\personnage.cpp(11): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\personnage.cpp(47): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\personnage.cpp(52): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  Nuage.cpp
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\nuage.cpp(13): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\nuage.cpp(53): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\nuage.cpp(54): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
   Noisette.cpp
-  Bibliotheque.vcxproj -> C:\Users\val_r\OneDrive\Documents\Visual Studio 2017\Projects\Jeucpp-new2805\JeuVersion0\Debug\Bibliotheque.lib
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\noisette.cpp(10): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\noisette.cpp(54): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\noisette.cpp(56): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  pugixml.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  monMain.cpp
+  Génération de code en cours...
+  Bibliotheque.vcxproj -> C:\Users\hp\Documents\Visual Studio 2017\Projects\Jeucpp-new2905bis\Debug\Bibliotheque.lib
