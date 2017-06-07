@@ -50,7 +50,6 @@ noisette::noisette(int x, int y)
 	}
 	posx = x;
 	posy = y;
-	vitesse = 1; //valeurs initiales, a changer plus tard
 	circle = make_unique<CircleShape>(CircleShape(size/2));
 	circle->setFillColor(Color(149, 86, 40)); //valeurs trouvées pour faire du marron
 	circle->setPosition(posx, posy);
