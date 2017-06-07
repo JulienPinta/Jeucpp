@@ -13,10 +13,13 @@ Sprite Leo;
 
 int monMain()
 {
-	sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
+	sf::RenderWindow window(sf::VideoMode(1200, 800), "SFML works!");
 	RectangleShape fond = RectangleShape(Vector2f(1920, 1080));
 	fond.setFillColor(Color(119, 181, 254));
 
+	if (!perso.loadFromFile("JeuVersion0/Leo.png")) {
+		return 1;
+	}
 
 	Plateau plat;
 

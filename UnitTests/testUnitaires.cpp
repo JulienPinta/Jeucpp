@@ -1,5 +1,7 @@
-#include "gtest/gtest.h"
+#include "gtest\gtest.h"
 #include "../Bibliotheque/Noisette.h"
+#include "../Bibliotheque/monMain.h"
+#include "SFML/Graphics.hpp"
 
 TEST(Noisette, getPosxWorks) {
 	noisette nois1(100,0);

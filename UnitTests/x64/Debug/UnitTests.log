@@ -1,0 +1,2 @@
+﻿  testUnitaires.cpp
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\unittests\testunitaires.cpp(1): fatal error C1083: Impossible d'ouvrir le fichier include : 'gtest\gtest.h' : No such file or directory

@@ -1,0 +1,5 @@
+﻿  Noisette.cpp
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\noisette.cpp(10): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\noisette.cpp(53): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\hp\documents\visual studio 2017\projects\jeucpp-new2905bis\jeuversion0\noisette.cpp(55): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  Bibliotheque.vcxproj -> C:\Users\hp\Documents\Visual Studio 2017\Projects\Jeucpp-new2905bis\Debug\Bibliotheque.lib
