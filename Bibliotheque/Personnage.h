@@ -15,14 +15,16 @@ public:
 	~Personnage();
 	int getPosx();
 	int getPosy();
-	int getSize();
+	int getSizex();
+	int getSizey();
 private:
 	Texture perso;
 	Sprite Leosprite;
 	//RectangleShape *Leo;
 	int vitessex;
 	int vitessey;
-	int size;
+	int sizex;
+	int sizey;
 	int posx;
 	int posy;
 };

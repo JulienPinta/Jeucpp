@@ -62,27 +62,29 @@ bool Plateau::enCollision(unique_ptr<Element> e) {
 	// paramètres de l'éléments
 	int x = e->getPosx();
 	int y = e->getPosy();
-	int size = e->getSize();
+	int sizex = e->getSizex();
+	int sizey = e->getSizey();
 
 	// paramètres du joueur
 	int xjoueur = Leo.getPosx();
 	int yjoueur = Leo.getPosy();
-	int sizejoueur = Leo.getSize();
+	int sizejoueurx = Leo.getSizex();
+	int sizejoueury = Leo.getSizey();
 
 	// si coin en haut à gauche du joueur est dans l'element
-	if (xjoueur > x && xjoueur < x + size && yjoueur > y && yjoueur < y + size) {
+	if (xjoueur > x && xjoueur < x + sizex && yjoueur > y && yjoueur < y + sizey) {
 		return true;
 	}
 	// si coin en haut à droite du joueur est dans l'element
-	if (xjoueur + sizejoueur > x && xjoueur + sizejoueur < x + size && yjoueur > y && yjoueur < y + size) {
+	if (xjoueur + sizejoueurx > x && xjoueur + sizejoueurx < x + sizex && yjoueur > y && yjoueur < y + sizey) {
 		return true;
 	}
 	// si coin en bas à gauche du joueur est dans l'element
-	if (xjoueur > x && xjoueur < x + size && yjoueur + sizejoueur > y && yjoueur + sizejoueur < y + size) {
+	if (xjoueur > x && xjoueur < x + sizex && yjoueur + sizejoueury > y && yjoueur + sizejoueury < y + sizey) {
 		return true;
 	}
 	// si coin en bas à droite du joueur est dans l'element
-	if (xjoueur + sizejoueur > x && xjoueur + sizejoueur < x + size && yjoueur + sizejoueur > y && yjoueur + sizejoueur < y + size) {
+	if (xjoueur + sizejoueurx > x && xjoueur + sizejoueurx < x + sizex && yjoueur + sizejoueury > y && yjoueur + sizejoueury < y + sizey) {
 		return true;
 	}
 	return false;
@@ -114,7 +116,7 @@ bool Plateau::disponible(int y) {
 	for (auto &e : mesElem) {
 		posx = e->getPosx();
 		posy = e->getPosy();
-		size = e->getSize();
+		size = e->getSizex();
 		if (posx >= 1920 - size && y == posy) {
 			return false;
 		}

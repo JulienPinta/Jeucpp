@@ -1,2 +1,11 @@
 ﻿  monMain.cpp
-  Bibliotheque.vcxproj -> C:\Users\hp\Documents\Visual Studio 2017\Projects\Jeucpp-new2905bis\Debug\Bibliotheque.lib
+  Plateau.cpp
+  Nuage.cpp
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\nuage.cpp(12): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\nuage.cpp(60): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  Noisette.cpp
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\noisette.cpp(10): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\noisette.cpp(63): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  Element.cpp
+  Génération de code en cours...
+  Bibliotheque.vcxproj -> C:\Users\val_r\OneDrive\Documents\Visual Studio 2017\Projects\Jeucpp-new2905bis\Debug\Bibliotheque.lib

@@ -15,13 +15,15 @@ public:
 	virtual void setMange() = 0;
 	virtual int getPosx() = 0;
 	virtual int getPosy() = 0;
-	virtual int getSize() = 0;
+	virtual int getSizex() = 0;
+	virtual int getSizey() = 0;
 	virtual bool estNuage() = 0;
 	Element();
 	~Element();
 
 private:
-	int size;
+	int sizex;
+	int sizey;
 	int posx;
 	int posy;
 };

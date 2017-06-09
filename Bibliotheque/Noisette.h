@@ -11,7 +11,8 @@ public:
 	~noisette();
 	int getPosx();
 	int getPosy();
-	int getSize();
+	int getSizex();
+	int getSizey();
 	void setMange();
 	bool estNuage();
 
@@ -20,8 +21,10 @@ private:
 	int posx;
 	int posy;
 	int vitesse;
-	int size;
-	unique_ptr<CircleShape> circle;
+	int sizex;
+	int sizey;
+	Texture noisett;
+	Sprite noisettsprite;
 };
 
 

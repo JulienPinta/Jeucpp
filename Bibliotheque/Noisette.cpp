@@ -2,12 +2,12 @@
 #include "../pugixml/src/pugixml.hpp"
 
 void noisette::draw(RenderWindow& window) {
-	window.draw(*circle);
+	window.draw(noisettsprite);
 }
 
 void noisette::translate(int x) {
 	posx = posx + x;
-	circle->move(x, 0);
+	noisettsprite.move(x, 0);
 
 }
 
@@ -19,8 +19,12 @@ int noisette::getPosy() {
 	return posy;
 }
 
-int noisette::getSize() {
-	return size;
+int noisette::getSizex() {
+	return sizex;
+}
+
+int noisette::getSizey() {
+	return sizey;
 }
 
 unique_ptr<Element> noisette::copy() {
@@ -37,6 +41,11 @@ void noisette::setMange() {
 
 noisette::noisette(int x, int y)
 {
+	if (!noisett.loadFromFile(("noisette.png"))) {
+		cout << "error load file" << endl;
+	}
+	noisett.setSmooth(true);
+	noisettsprite.setTexture(noisett);
 	pugi::xml_document doc;
 
 	pugi::xml_parse_result result = doc.load_file("jeu.xml");
@@ -45,14 +54,13 @@ noisette::noisette(int x, int y)
 	{
 		if (!strcmp(noouv.name(), "Noisette")) {
 			vitesse = noouv.attribute("vitesse").as_int();
-			size = noouv.attribute("size").as_int();
+			sizex = noouv.attribute("sizex").as_int();
+			sizey = noouv.attribute("sizey").as_int();
 		}
 	}
 	posx = x;
 	posy = y;
-	circle = make_unique<CircleShape>(CircleShape(size / 2));
-	circle->setFillColor(Color(149, 86, 40)); //valeurs trouvées pour faire du marron
-	circle->setPosition(posx, posy);
+	noisettsprite.setPosition(posx, posy);
 }
 
 

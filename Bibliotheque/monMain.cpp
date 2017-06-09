@@ -13,8 +13,8 @@
 
 int monMain()
 {
-	sf::RenderWindow window(sf::VideoMode(1200, 800), "SFML works!");
-	RectangleShape fond = RectangleShape(Vector2f(1200, 800));
+	sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
+	RectangleShape fond = RectangleShape(Vector2f(1920, 1080));
 	fond.setFillColor(Color(119, 181, 254));
 	
 	static const ExitGames::Common::JString appID = L"2a1a1b5b-7a32-4a96-8f2b-2a5b6454062c"; // set your app id here

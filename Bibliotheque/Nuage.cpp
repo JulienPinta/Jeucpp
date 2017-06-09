@@ -1,7 +1,7 @@
 #include "../pugixml/src/pugixml.hpp"
 #include "nuage.h"
 void nuage::draw(RenderWindow& window) {
-	window.draw(*rect);
+	window.draw(nuagsprite);
 }
 
 unique_ptr<Element> nuage::copy() {
@@ -9,7 +9,7 @@ unique_ptr<Element> nuage::copy() {
 }
 void nuage::translate(int x) {
 	posx = posx + x;
-	rect->move(x, 0);
+	nuagsprite.move(x, 0);
 }
 
 int nuage::getPosx() {
@@ -20,8 +20,12 @@ int nuage::getPosy() {
 	return posy;
 }
 
-int nuage::getSize() {
-	return size;
+int nuage::getSizex() {
+	return sizex;
+}
+
+int nuage::getSizey() {
+	return sizey;
 }
 
 bool nuage::estNuage() {
@@ -34,7 +38,11 @@ void nuage::setMange() {
 
 nuage::nuage(int x, int y)
 {
-
+	if (!nuag.loadFromFile(("nuage.png"))) {
+		cout << "error load file" << endl;
+	}
+	nuag.setSmooth(true);
+	nuagsprite.setTexture(nuag);
 	pugi::xml_document doc;
 
 	pugi::xml_parse_result result = doc.load_file("jeu.xml");
@@ -43,14 +51,13 @@ nuage::nuage(int x, int y)
 	{
 		if (!strcmp(noouv.name(), "Nuage")) {
 			vitesse = noouv.attribute("vitesse").as_int();
-			size = noouv.attribute("size").as_int();
+			sizex = noouv.attribute("sizex").as_int();
+			sizey = noouv.attribute("sizey").as_int();
 		}
 	}
 	posx = x;
 	posy = y;
-	rect = make_unique<RectangleShape>(RectangleShape(Vector2f(size, size)));
-	rect->setPosition(x, y);
-	rect->setFillColor(Color::White);
+	nuagsprite.setPosition(x, y);
 }
 
 

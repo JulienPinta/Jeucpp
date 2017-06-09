@@ -20,15 +20,20 @@ int Personnage::getPosy() {
 }
 
 
-int Personnage::getSize() {
-	return size;
+int Personnage::getSizex() {
+	return sizex;
+
+}
+
+int Personnage::getSizey() {
+	return sizey;
 
 }
 
 
 Personnage::Personnage()
 {
-	if (!perso.loadFromFile(("Leo.png"),IntRect(96,0,32,48))) {
+	if (!perso.loadFromFile(("montgolfiere.png"))) {
 	cout << "error load file" << endl;
 	}
 	perso.setSmooth(true);
@@ -42,7 +47,8 @@ Personnage::Personnage()
 		if (!strcmp(noouv.name(), "Leo")) {
 			vitessex = noouv.attribute("vitessex").as_int();
 			vitessey = noouv.attribute("vitessey").as_int();
-			size = noouv.attribute("size").as_int();
+			sizex = noouv.attribute("sizex").as_int();
+			sizey = noouv.attribute("sizey").as_int();
 		}
 	}
 	posx = 0;

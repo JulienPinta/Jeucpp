@@ -11,7 +11,8 @@ public:
 	~nuage();
 	int getPosx();
 	int getPosy();
-	int getSize();
+	int getSizex();
+	int getSizey();
 	bool estNuage();
 	void setMange();
 private:
@@ -20,7 +21,9 @@ private:
 	int posy;
 	int taille;
 	int vitesse;
-	int size;
-	unique_ptr<RectangleShape> rect;
+	int sizex;
+	int sizey;
+	Texture nuag;
+	Sprite nuagsprite;
 };
 
