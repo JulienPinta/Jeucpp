@@ -78,7 +78,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Software\SFML-2.4.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Software\SFML-2.4.2\include;C:\Software\Photon-Windows-Sdk_v4-1-6-0;C:\Software\Photon-Windows-Sdk_v4-1-6-0\LoadBalancing-cpp\inc;C:\Software\Photon-Windows-Sdk_v4-1-6-0\Common-cpp\inc;C:\Software\Photon-Windows-Sdk_v4-1-6-0\Photon-cpp\inc;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -135,21 +135,25 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\JeuVersion0\pugixml\src\pugixml.cpp" />
-    <ClCompile Include="..\JeuVersion0\Element.cpp" />
-    <ClCompile Include="..\JeuVersion0\Noisette.cpp" />
-    <ClCompile Include="..\JeuVersion0\Nuage.cpp" />
-    <ClCompile Include="..\JeuVersion0\Personnage.cpp" />
-    <ClCompile Include="..\JeuVersion0\Plateau.cpp" />
+    <ClCompile Include="..\pugixml\src\pugixml.cpp" />
+    <ClCompile Include="Element.cpp" />
+    <ClCompile Include="MonListener.cpp" />
     <ClCompile Include="monMain.cpp" />
+    <ClCompile Include="Noisette.cpp" />
+    <ClCompile Include="Nuage.cpp" />
+    <ClCompile Include="Personnage.cpp" />
+    <ClCompile Include="Plateau.cpp" />
+    <ClCompile Include="SampleNetworkLogic.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Element.h" />
+    <ClInclude Include="MonListener.h" />
     <ClInclude Include="monMain.h" />
     <ClInclude Include="Noisette.h" />
     <ClInclude Include="nuage.h" />
     <ClInclude Include="Personnage.h" />
     <ClInclude Include="Plateau.h" />
+    <ClInclude Include="SampleNetworkLogic.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

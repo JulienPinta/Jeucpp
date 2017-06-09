@@ -17,14 +17,12 @@ public:
 	int getPosy();
 	int getSize();
 private:
-	//Texture perso;
-	//Sprite Leo;
-	RectangleShape *Leo;
+	Texture perso;
+	Sprite Leosprite;
+	//RectangleShape *Leo;
 	int vitessex;
 	int vitessey;
 	int size;
 	int posx;
 	int posy;
 };
-
-

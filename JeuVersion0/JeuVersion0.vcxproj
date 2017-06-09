@@ -89,12 +89,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Software\SFML-2.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Software\SFML-2.4.2\include;%(AdditionalIncludeDirectories);C:\Software\Photon-Windows-Sdk_v4-1-6-0</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Software\SFML-2.4.2\lib;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-audio.lib;sfml-graphics.lib;sfml-network.lib;sfml-system.lib;sfml-window.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Software\SFML-2.4.2\lib;%(AdditionalLibraryDirectories);C:\Software\Photon-Windows-Sdk_v4-1-6-0\Common-cpp;C:\Software\Photon-Windows-Sdk_v4-1-6-0\Common-cpp\lib;C:\Software\Photon-Windows-Sdk_v4-1-6-0\LoadBalancing-cpp;C:\Software\Photon-Windows-Sdk_v4-1-6-0\LoadBalancing-cpp\lib;C:\Software\Photon-Windows-Sdk_v4-1-6-0\Photon-cpp;C:\Software\Photon-Windows-Sdk_v4-1-6-0\Photon-cpp\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);Common-cpp_vc14_debug_windows_md_Win32.lib;Photon-cpp_vc14_debug_windows_md_Win32.lib;LoadBalancing-cpp_vc14_debug_windows_md_Win32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
