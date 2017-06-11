@@ -1,0 +1,19 @@
+﻿  SampleNetworkLogic.cpp
+  Plateau.cpp
+  Personnage.cpp
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\personnage.cpp(11): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\personnage.cpp(50): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  Nuage.cpp
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\nuage.cpp(12): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\nuage.cpp(51): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\nuage.cpp(52): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  Noisette.cpp
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\noisette.cpp(10): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\noisette.cpp(53): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\val_r\onedrive\documents\visual studio 2017\projects\jeucpp-new2905bis\bibliotheque\noisette.cpp(55): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  monMain.cpp
+  MonListener.cpp
+  Element.cpp
+  pugixml.cpp
+  Génération de code en cours...
+  Bibliotheque.vcxproj -> C:\Users\val_r\OneDrive\Documents\Visual Studio 2017\Projects\Jeucpp-new2905bis\x64\Debug\Bibliotheque.lib
