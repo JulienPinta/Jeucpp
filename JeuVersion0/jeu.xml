@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<monjeu name="Leo">
+	<Nuage vitesse="1" sizey="118" sizex="188"/>
+	<Noisette vitesse="1" sizey="118" sizex="126" />
+	<Leo vitessex="4" vitessey="4" sizey="60" sizex="48" />
+</monjeu>
